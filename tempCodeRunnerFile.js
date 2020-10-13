@@ -1,5 +1,0 @@
-function besok(){
-    
-// }
-
-// besok();

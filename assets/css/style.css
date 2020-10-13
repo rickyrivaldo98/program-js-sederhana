@@ -1,0 +1,19 @@
+.my-table {
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.my-title {
+  padding-top: 30px;
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  -webkit-box-shadow: 7px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 10px 22px 0px rgba(0, 0, 0, 0.75);
+}

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Simple Web Apps</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="text-center my-title">
+              <h1>Simple Web Apps</h1>
+              <h3>Code Challenge Javascript</h3>
+              <h6>Follow Me: @rickytendou</h6>
+          </div>
+          <div class="my-table">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Request</th>
+                    <th scope="col">Example</th>
+                    <th scope="col">Parms</th>
+                    <th scope="col">Code Status</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><p>Make condition to determine what day tomorrow</p></td>
+                    <td><p>Input: Monday<br>Output: Tomorrow is Tuesday</p></td>
+                    <td><p>Day in a week</p></td>
+                    <td>✔</td>
+                    <td><button type="button" data-toggle="modal" data-target="#modal1" class="btn btn-primary btn-sm">🏃‍♂️Run💨</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><p>Make condition to determine a score to a grade </p></td>
+                    <td><p>Input: 90<br>Output: Your Grade is A</p></td>
+                    <td><p>90-100 = A <br> 75-89 = B <br> 60-74 = C <br> 50-59 = D <br> below 50 = Failed</p></td>
+                    <td>✔</td>
+                    <td><button type="button" data-toggle="modal" data-target="#modal2" class="btn btn-primary btn-sm">🏃‍♂️Run💨</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><p>Make iteration to show all even number from input</p></td>
+                    <td><p>Input: 10<br>Output: 0, 2, 4, 6, 8, 10</p></td>
+                    <td><p>Nothing</p></td>
+                    <td>✔</td>
+                    <td><button type="button" data-toggle="modal" data-target="#modal3" class="btn btn-primary btn-sm">🏃‍♂️Run💨</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td><p>Make iteration to show all odd number from input</p></td>
+                    <td><p>Input: 10<br>Output: 1, 3, 5, 7, 9</p></td>
+                    <td><p>Nothing</p></td>
+                    <td>✔</td>
+                    <td><button type="button" data-toggle="modal" data-target="#modal4" class="btn btn-primary btn-sm">🏃‍♂️Run💨</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td><p>Add text in list from input</p></td>
+                    <td><p>Input: Ricky<br>Output: Ricky in li list</p></td>
+                    <td><p>Nothing</p></td>
+                    <td>✔</td>
+                    <td><button type="button" data-toggle="modal" data-target="#modal4" class="btn btn-primary btn-sm">🏃‍♂️Run💨</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td><p>Delete latest text in list from input</p></td>
+                    <td><p>Input: Nothing<br>Output: latest text in list gone</p></td>
+                    <td><p>Nothing</p></td>
+                    <td>✔</td>
+                    <td><button type="button" data-toggle="modal" data-target="#modal4" class="btn btn-primary btn-sm">🏃‍♂️Run💨</button></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- modal -->
+              <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Challenge 1</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Input</label>
+                              <input type="text" class="form-control" id="input1" placeholder="Enter Input Here...">
+                              <small id="emailHelp" class="form-text text-muted">After enter input press input button below</small>
+                            </div>
+                            <h4 id="output1"></h4>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" onclick="besok()" >Input</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/program.js"></script>
+</body>
+</html>
